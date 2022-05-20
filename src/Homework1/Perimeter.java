@@ -3,7 +3,7 @@ package Homework1;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class perimeter {
+public class Perimeter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

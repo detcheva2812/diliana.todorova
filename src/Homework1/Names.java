@@ -2,7 +2,7 @@ package Homework1;
 
 import java.util.Scanner;
 
-public class names {
+public class Names {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
