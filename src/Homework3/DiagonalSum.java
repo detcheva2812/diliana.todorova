@@ -14,8 +14,9 @@ public class DiagonalSum {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
 
-                if (i == j)
+                if (i == j){
                     firstSum += arr[i][j];
+                }
 
                 if ((i + j) == 3) {
                     secondSum += arr[i][j];
