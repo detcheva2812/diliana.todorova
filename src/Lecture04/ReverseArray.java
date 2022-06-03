@@ -1,6 +1,5 @@
-package Homework2;
+package Lecture04;
 
-import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class ReverseArray {

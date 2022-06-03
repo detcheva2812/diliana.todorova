@@ -1,6 +1,5 @@
-package Homework2;
+package Lecture04;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class VacationAdvisor {

@@ -1,4 +1,4 @@
-package Homework3;
+package Lecture05;
 
 public class SumOfArrayElements {
     public static void main(String[] args) {

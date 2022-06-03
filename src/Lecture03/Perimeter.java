@@ -1,6 +1,5 @@
-package Homework1;
+package Lecture03;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Perimeter {

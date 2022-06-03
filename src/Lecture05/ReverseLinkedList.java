@@ -1,4 +1,4 @@
-package Homework3;
+package Lecture05;
 
 import java.util.Collections;
 import java.util.LinkedList;

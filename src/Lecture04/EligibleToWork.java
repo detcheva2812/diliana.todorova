@@ -1,6 +1,4 @@
-package Homework2;
-
-import com.sun.security.jgss.GSSUtil;
+package Lecture04;
 
 import java.util.Scanner;
 

@@ -1,6 +1,5 @@
-package Homework3;
+package Lecture05;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Matrix2DUserInput {

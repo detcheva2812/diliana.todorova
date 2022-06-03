@@ -1,4 +1,4 @@
-package Homework4;
+package Lecture06;
 
 public class AverageNumMethod {
     public static void main(String[] args) {

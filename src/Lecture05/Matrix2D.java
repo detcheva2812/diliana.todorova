@@ -1,6 +1,4 @@
-package Homework3;
-
-import java.util.Arrays;
+package Lecture05;
 
 public class Matrix2D {
     public static void main(String[] args) {

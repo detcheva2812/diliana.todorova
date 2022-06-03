@@ -1,12 +1,13 @@
-package Homework2;
+package Lecture04;
 
 import java.util.Scanner;
 
-public class DivisibleBy5 {
+public class LargestNumInArr {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter the array length (positive number):");
+        int largestNum = Integer.MIN_VALUE;
+        System.out.println("Please enter the array length:");
         int length = Integer.parseInt(scanner.nextLine());
 
         int[] numbers = new int[length];
@@ -17,15 +18,13 @@ public class DivisibleBy5 {
         }
 
         for (int item : numbers) {
-            if (item > 150) {
-                System.out.println("Number greater than 150 encountered and iteration stopped.");
-                break;
-            }
-            if (item % 5 == 0) {
-                System.out.printf("%d is divisible by 5.%n", item);
+            if (item > largestNum) {
+                largestNum = item;
             }
         }
+        System.out.printf("The largest number in the Array is %d.", largestNum);
     }
-
 }
+
+
 
