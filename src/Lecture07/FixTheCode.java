@@ -40,6 +40,7 @@ class FixThisCode {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter file path: ");
 
         String filePath = scanner.nextLine();
 
@@ -47,9 +48,14 @@ class FixThisCode {
                 scanner.nextInt();
 
         String textToAdd = scanner.nextLine();
+        try {
+            printToFile(getFileWriter(filePath), textToAdd,
+                    howManyTimesToPrintTheTextToFile);
+        }catch(NullPointerException npe){
+            System.out.println("Null pointer Exception caught.");
+        }
 
-        printToFile(getFileWriter(filePath), textToAdd,
-                howManyTimesToPrintTheTextToFile);
+
 
     }
 }
