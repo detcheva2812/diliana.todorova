@@ -1,5 +1,7 @@
 package Lecture08;
 
+import java.util.Scanner;
+
 class Employee {
     final String id;
     final String firstName;
@@ -21,8 +23,9 @@ class Employee {
         return salaryPerMonth * 12;
     }
 
-    public double raiseSalary() {
-        return salaryPerMonth + (0.20 * salaryPerMonth);
+    public double raiseSalary(double percentageRaise) {
+
+        return salaryPerMonth + (percentageRaise/100 * salaryPerMonth);
     }
 
     @Override
@@ -38,10 +41,15 @@ class Employee {
 
     public static class Exercise2 {
         public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Please enter percentage Salary raise: ");
+            double percentageRaise = scanner.nextDouble();
             Employee employee = new Employee("123456789", "Ivan", "Ivanov", 1000 );
             System.out.println(employee.id);
             System.out.println(employee.getName());
             System.out.println(employee.getAnnyalSalary());
+            System.out.println(employee.raiseSalary(percentageRaise));
 
         }
     }
