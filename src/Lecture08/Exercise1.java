@@ -8,16 +8,8 @@ abstract class Shape {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     public boolean isFilled() {
         return isFilled;
-    }
-
-    public void setFilled(boolean filled) {
-        isFilled = filled;
     }
 
     public abstract double getArea();
@@ -29,16 +21,14 @@ abstract class Shape {
 class Circle extends Shape {
     double radius;
 
-    public Circle(double radius, String color, boolean isFilled) {
-        super();
+    public Circle(double radius, String color, boolean isFilled){
+        this.radius = radius;
+        this.color = color;
+        this.isFilled = isFilled;
     }
 
     public double getRadius() {
         return radius;
-    }
-
-    public void setRadius(double radius) {
-        this.radius = radius;
     }
 
     @Override
@@ -56,28 +46,26 @@ class Rectangle extends Shape {
     double width;
     double length;
 
-    public Rectangle(double width, double length, String color, boolean isFilled) {
-        super();
+    public Rectangle(double width, double length) {
+        this.width = width;
     }
 
-    public Rectangle(double side, String color, boolean isFilled) {
-        super();
+    public Rectangle(double width, double length, String color, boolean isFilled) {
+        this.width = width;
+        this.length = length;
+        this.color = color;
+        this.isFilled = isFilled;
+    }
+
+    public Rectangle() {
     }
 
     public double getWidth() {
         return width;
     }
 
-    public void setWidth(double width) {
-        this.width = width;
-    }
-
     public double getLength() {
         return length;
-    }
-
-    public void setLength(double length) {
-        this.length = length;
     }
 
     @Override
@@ -94,16 +82,24 @@ class Rectangle extends Shape {
 class Square extends Rectangle {
     double side;
 
+    public Square(double sideA, double sideB) {
+        super(sideA, sideB);
+        this.side = sideA;
+    }
+
+    public Square(double side) {
+        this(side, side);
+    }
+
+
     public Square(double side, String color, boolean isFilled) {
-        super(side, color, isFilled);
+        this.side = side;
+        this.color = color;
+        this.isFilled = isFilled;
     }
 
     public double getSide() {
         return side;
-    }
-
-    public void setSide(double side) {
-        this.side = side;
     }
 
     @Override
