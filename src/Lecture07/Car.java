@@ -15,7 +15,6 @@ public class Car {
 
 
     public Car() {
-        System.out.println();
     }
 
     public Car(String name, String color, int releaseYear, int horsePower, boolean isSecondHand) {
