@@ -1,6 +1,7 @@
 package Lecture09OOPPractice;
 
 public class Bulgarian extends Person {
+
     public Bulgarian(String name, String sex, String religion, String language, String job, String nationality, String pin, String countryOfResidence) {
         super(name, sex, religion, "Bulgarian", job, "Bulgarian", pin, countryOfResidence);
     }

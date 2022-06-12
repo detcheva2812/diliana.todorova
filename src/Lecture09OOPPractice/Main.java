@@ -2,7 +2,6 @@ package Lecture09OOPPractice;
 
 public class Main {
     public static void main(String[] args) {
-
         Person person = new Person("Diliana", "Female", "Orthodox",
                 "Bulgarian", "QA", "Bulgaria", "9112281234", "Bulgaria");
 

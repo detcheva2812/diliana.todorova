@@ -3,7 +3,6 @@ package Lecture09OOPPractice;
 import java.time.LocalDate;
 
 public class Person {
-
     private String name;
     private String sex;
     private String religion;
